@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0%;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/logo.svg" alt="logo" class="logo">
+  <div class="tip-container">
+    <div class="left">
+      <div class="left-content">
+        <h4 class="bill-title">Bill</h4>
+        <div class="bill-price-container">
+          <img src="images/icon-dollar.svg" alt="dollar-icon" class="bill-dollar-icon">
+          <input type="text" value="0" class="bill-price-input">
+        </div>
+
+        <h4>Select Tip %</h4>
+        <div class="tip-button-area">
+          <div class="tip-button-top">
+            <button type="button" class="percent5 btn">5%</button>
+            <button type="button" class="percent10 btn">10%</button>
+            <button type="button" class="percent15 btn">15%</button>
+          </div>
+          <div class="tip-button-bottom">
+            <button type="button" class="percent25 btn">25%</button>
+            <button type="button" class="percent50 btn">50%</button>
+            <input type="text" value="Custom" class="custom-tip">
+          </div>
+        </div>
+        <h4>Number of People</h4>
+        <div class="number-of-people-container">
+          <img src="images/icon-person.svg" alt="person-icon" class="person-icon">
+          <input type="text" value="0" class="number-of-people-input">
+        </div>
+      </div>
+
+
+    </div>
+    <div class="right">
+      <div class="right-content">
+        <div class="right-content-container">
+          <div class="tip-amount-container">
+            <div class="tip-amount-details">
+              <h3 class="right-header">Tip Amount</h3>
+              <p class="per-person">/ person</p>
+            </div>
+            <div>
+              <p class="output output-tip-amount">$0.00</p>
+            </div>
+          </div>
+          <div class="total-container">
+            <div class="total-details">
+              <h3 class="right-header">Total</h3>
+              <p class="per-person">/ person</p>
+            </div>
+            <p class="output output-total-amount"> $0.00</p>
+          </div>
+          <button class="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/icoez">icoez</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
