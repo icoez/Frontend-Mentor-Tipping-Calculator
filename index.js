@@ -103,15 +103,15 @@ function Calculate() {
   let tipAmountOutput = document.querySelector(".output-tip-amount");
   let totalAmountOutput = document.querySelector(".output-total-amount");
   if (
-    percentTip == -1 ||
     isNaN(percentTip) ||
     percentTip === null ||
-    numberOfPeople == -1 ||
+    percentTip <= 0 ||
     isNaN(numberOfPeople) ||
     numberOfPeople === null ||
-    billTotal == -1 ||
+    numberOfPeople <= 0 ||
     isNaN(billTotal) ||
-    billTotal === null
+    billTotal === null ||
+    billTotal <= 0
   ) {
     tipAmountOutput.textContent = "N/A";
     totalAmountOutput.textContent = "N/A";
